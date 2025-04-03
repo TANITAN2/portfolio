@@ -1,12 +1,269 @@
-<!-- Created 'index.html' -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TAN's Portfolio</title>
+
+    <link rel="icon" href="assets/items/icon.png">
+    <link rel="stylesheet" href="assets/fonts/Albert_Sans.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scheme_mode.css">
+
+    <script src="js/jquery-3.7.1.min.js" defer></script>
+    <script src="js/global_navigation.js" defer></script>
 </head>
+
 <body>
-    
+    <div class="skip_nav">
+        <a href="#contents">컨텐츠 바로가기</a>
+        <a href="#about">정보 바로가기</a>
+        <a href="#skills">스킬 바로가기</a>
+        <a href="#project">프로젝트 바로가기</a>
+    </div>
+
+
+
+    <header id="header" class="header">
+        <div class="header_container">
+            <h1 class="logo">
+                <a href="#">TAN's PORTFOLIO</a>
+            </h1>
+            <button type="button" class="menu">
+                <span class="blind">메뉴 펼치기</span>
+                <span class="line">&nbsp;</span>
+                <span>&nbsp;</span>
+            </button>
+            <nav class="gnb">
+                <ul class="nav_menu">
+                    <li class="nav_item"><a href="/" class="nav_link">ABOUT</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">PROFILE</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">PROJECT</a></li>
+                    <li class="nav_item"><a href="/" class="nav_link">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="btn_wrap">
+                <button type="button" class="btn_contact" onclick="location.href='contact.html'">CONTACT</button>
+                <!-- <button type="button" class="btn_contact_overlap" onclick="location.href='contact.html'">CONTACT</button> -->
+            </div>
+        </div>
+    </header>
+
+
+
+    <main id="main">
+        <section class="section title" aria-labelledby="main-title">
+            <h2 id="main-title" class="blind">메인 타이틀</h2>
+            <video src="assets/vd/title_vd_01.mp4" type="video/mp4" class="title_vd" autoplay loop muted poster="assets/bg/title_bg.jpg"></video>
+            <div class="container">
+                <!-- <img src="assets/bg/title_bg.jpg" alt="" class="main_bg"> -->
+                <div class="f_b">
+                    <h3 class="main_tit">
+                        A INTUITIVE<br>DESIGN
+                    </h3>
+                    <h3 class="main_tit t_e">
+                        NOT FOR ONE<br>BUT FOR ALL
+                    </h3>
+                </div>
+                <div class="f_b">
+                    <h3 class="main_tit">
+                        USER-<br>ORIENTED<br>EXPERIENCE
+                    </h3>
+                    <img src="assets/icons/scroll_down.svg" alt="스크롤 아이콘" class="scroll">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section intro">
+            <h2 class="blind">Intro</h2>
+            <div class="intro_bg">&nbsp;</div>
+            <div class="f_c">
+                <span class="upend neon_01">WITH CONSTANT GROWTH</span>
+            </div>
+        </section>
+
+
+
+        <section class="section profile" aria-labelledby="profile-title">
+            <h2 id="profile-title" class="blind">프로필 소개</h2>
+            <div class="sec_container">
+                <ul class="skills">
+                    <li>
+                        <h3 class="sec_tit">PROFILE</h3>
+                    </li>
+                    <li>
+                        <img src="assets/items/IMG_0957.jpg" alt="증명 및 이력서 이미지" class="profile_img">
+                    </li>
+                    <li class="c_a">
+                        <div class="profile_info">
+                            <i class="icon icon_user">&nbsp;</i>
+                            <span>LEE JUNHO</span>
+                            <i class="icon icon_birth">&nbsp;</i>
+                            <span>2000. 02. 24</span>
+                        </div>
+                    </li>
+                    <li class="c_a">
+                        <div class="profile_info">
+                            <i class="icon icon_phone">&nbsp;</i>
+                            <a href="tel:01046205515" class="contact_link">010-4620-5515</a>
+                            <i class="icon icon_mail">&nbsp;</i>
+                            <a href="mailto:tan2tani@naver.com" class="contact_link">tan2tani@naver.com</a>
+                        </div>
+                    </li>
+                    <li class="sk_li sk_li_01">
+                        <strong class="fs_20">Education</strong>
+                        <ul class="sk_item">
+                            <li>
+                                <span class="c_7">2019</span>
+                                <span class="c_a">성남테크노과학고등학교 졸업</span>
+                            </li>
+                            <li>
+                                <span class="c_7">2024</span>
+                                <span class="c_a">EZEN아카데미 훈련과정 수료</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sk_li sk_li_02">
+                        <strong class="fs_20">Certificate</strong>
+                        <ul class="sk_item">
+                            <li>
+                                <span class="c_7">2018</span>
+                                <span class="c_a">사진기능사</span>
+                            </li>
+                            <li>
+                                <span class="c_7">2021</span>
+                                <span class="c_a">2종 보통 운전면허</span>
+                            </li>
+                            <li>
+                                <span class="c_7">2025</span>
+                                <span class="c_a">GTQ 포토샵 1급</span>
+                            </li>
+                            <li>
+                                <span class="c_7">2025</span>
+                                <span class="c_a">2종 소형 운전면허</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sk_li sk_li_03">
+                        <strong class="fs_20">Skills</strong>
+                        <ul class="sk_item">
+                            <li class="sk_type">
+                                <i class="html"></i>
+                                <div class="f_b">
+                                    <span class="c_a">HTML5</span>
+                                    <span class="c_7">(시멘틱, 웹 접근성(ARIA), 구조 설계 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="css"></i>
+                                <div class="f_b">
+                                    <span class="c_a">CSS3</span>
+                                    <span class="c_7">(반응형 디자인 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="javascript"></i>
+                                <div class="f_b">
+                                    <span class="c_a">JavaScript</span>
+                                    <span class="c_7">(간단한 이벤트 처리 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="jquery"></i>
+                                <div class="f_b">
+                                    <span class="c_a">jQuery</span>
+                                    <span class="c_7">(DOM 조작 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="figma"></i>
+                                <div class="f_b">
+                                    <span class="c_a">Figma</span>
+                                    <span class="c_7">(웹 기획 및 프로토타입 제작 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="photoshop"></i>
+                                <div class="f_b">
+                                    <span class="c_a">Adobe Photoshop</span>
+                                    <span class="c_7">(이미지 편집 및 포스터 제작 가능)</span>
+                                </div>
+                            </li>
+                            <li class="sk_type">
+                                <i class="illustrator"></i>
+                                <div class="f_b">
+                                    <span class="c_a">Adobe Illustrator</span>
+                                    <span class="c_7">(벡터 디자인 제작 가능)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+        <section class="section project">
+            <h2 class="blind">포트폴리오 소개</h2>
+            <div class="sec_container">
+                <h3 class="sec_tit">PORTFOLIO</h3>
+                <div class="card_slot">
+                    <ul class="pf_card pf_01">
+                        <li><img src="assets/items/icon.png" alt="프로젝트 이미지" class="card_img"></li>
+                        <li><h4 class="card_tit">PORTFOLIO</h4></li>
+                        <li class="card_desc"><p>Portfolio Description.</p></li>
+                        <li class="card_page c_7">01<span class="c_3">&nbsp;/&nbsp;04</span></li>
+                    </ul>
+                    <ul class="pf_card pf_02">
+                        <li><img src="assets/items/icon.png" alt="프로젝트 이미지" class="card_img"></li>
+                        <li><h4 class="card_tit">PORTFOLIO</h4></li>
+                        <li class="card_desc"><p>Portfolio Description.</p></li>
+                        <li class="card_page c_7">02<span class="c_3">&nbsp;/&nbsp;04</span></li>
+                    </ul>
+                    <ul class="pf_card pf_03">
+                        <li><img src="assets/items/icon.png" alt="프로젝트 이미지" class="card_img"></li>
+                        <li><h4 class="card_tit">PORTFOLIO</h4></li>
+                        <li class="card_desc"><p>Portfolio Description.</p></li>
+                        <li class="card_page c_7">03<span class="c_3">&nbsp;/&nbsp;04</span></li>
+                    </ul>
+                    <ul class="pf_card pf_04">
+                        <li><img src="assets/items/icon.png" alt="프로젝트 이미지" class="card_img"></li>
+                        <li><h4 class="card_tit">PORTFOLIO</h4></li>
+                        <li class="card_desc"><p>Portfolio Description.</p></li>
+                        <li class="card_page c_7">04<span class="c_3">&nbsp;/&nbsp;04</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section contact">
+            <h2 class="blind">연락 및 채용</h2>
+            <div class="sec_container">
+                <p class="bg_tit">RELENTLESSLY<br>GROWING</p>
+                <div class="contact_boxed">
+                    <span>I'm Ready!</span>
+                    <address>
+                        <a href="mailto:tan2tani@naver.com" class="email">tan2tani@naver.com</a>
+                        <!-- <button type="button" class="btn_contact d_block">CONTACT</a> -->
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer id="footer" class="footer">
+        <div class="foot_container">
+            <p>Copyright © 2025 LEE JUNHO.</p>
+        </div>
+    </footer>
 </body>
 </html>
