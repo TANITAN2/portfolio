@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #a98fff;
+    --secondary-color: #242831;
+    --white-color: #ffffff;
+    --dark1-color: #d2d2d2;
+    --dark2-color: #a5a5a5;
+    --dark3-color: #595959;
+    --dark4-color: #4b4b4b;
+    --dark5-color: #343434;
+    --black-color: #000000;
+
+    --primary-font: "Pretendard Variable";
+    --font-default: 10px;
+    --body-font-size: 1.6rem;
+    --body-font-weight: 400;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: var(--white-color);
+    }
+}
+
+html {
+    font-family: var(--primary-font);
+    font-size: var(--font-default);
+}
+
+body {
+    background-color: var(--black-color);
+    font-family: var(--primary-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--white-color);
+    letter-spacing: var(--font-letter-spacing);
+}
+
+.hidden {
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+.blind {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
+
+.d_align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.d_block {
+    display: block;
+}
+
+.c_blue {
+    font-family: var(--primary-font);
+    color: #a98fff;
+}
+
+.c_gray {
+    font-family: var(--primary-font);
+    color: #d2d2d2;
+}
+
+.t_c {
+    padding: clamp(10rem, 20vw, 20rem);
+    text-align: center;
+}
+
+.t_l {
+    text-align: left;
+}
+
+.t_e {
+    text-align: end;
+}
+
+.f_b {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c_a {
+    color: #aaaaaa;
+}
+
+.c_7 {
+    color: #777777;
+}
+
+.c_5 {
+    color: #555555;
+}
+
+.c_3 {
+    color: #333333;
+}
+
+.fs_20 {
+    font-size: 2rem;
+}
+
+.d_ib {
+    display: inline-block;
+}
